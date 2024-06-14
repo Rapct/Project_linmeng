@@ -7,21 +7,28 @@ This project is a Python application designed to manage and analyze passenger da
 Before running this project, make sure you have Python 3.x installed on your machine. The project depends on several Python libraries, including pandas, Matplotlib, Seaborn, and Plotly.
 1. Clone the repository:
    ```bash
-   git clone [[repository-url]](https://github.com/Rapct/Project_linmeng/)
+   git clone https://github.com/Rapct/Project_linmeng/
 2. Navigate to the project directory:
    ```bash
    cd Project_linmeng
 3. Install the required libraries:
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+pandas
+matplotlib
+seaborn
+plotly
 
 ## Project Structure
-main.py: The main script responsible for coordinating data loading, cleaning, and visualization functions.
-passenger_analysis.py: This module contains all functions used for data manipulation and analysis.
-test_passenger_analysis.py: Contains unit tests for the functions defined in passenger_analysis.py to ensure their correct functionality.
+- `main.py`: The main script responsible for coordinating data loading, cleaning, and visualization functions.
+- `passenger_analysis.py`: This module contains all functions used for data manipulation and analysis.
+- `test_passenger_analysis.py`: Contains unit tests for the functions defined in passenger_analysis.py to ensure their correct functionality.
 
 ## Usage
 To run the project, execute the main script from the command line:
+```bash
 python main.py
+
 
 ## Main Functions
 load_data(file_path): Loads data from a CSV file into a pandas DataFrame.
