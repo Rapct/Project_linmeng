@@ -14,13 +14,16 @@ def load_data(file_path):
 
 # b) Clean the data
 def clean_data(df):
-    # 将出生日期列转换为日期类型
+    # Converting a date of birth column to a date type
     df['Birthdate'] = pd.to_datetime(df['Birthdate'], errors='coerce')
     
-    # 确保忠诚会员列为布尔类型
+    # Dealing with missing values can be done using fill or delete
+    df.dropna(subset=['Birthdate'], inplace=True)
+    
+    # Ensure that loyalty members are listed as Boolean types
     df['LoyaltyMember'] = df['LoyaltyMember'].astype(bool)
     
-    # 返回清理后的DataFrame
+    # Returns the cleaned up DataFrame
     return df
 
 
